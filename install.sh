@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLUE='\033[0;34m'.
+BLUE='\033[0;34m'
 NO_COLOR='\033[0m'
 
 if (( $EUID != 0 )); then
@@ -60,7 +60,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/IceMinecraftTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/RUSDIDEV/Themepanel/refs/heads/main/repair.sh)
 }
 
 restoreBackUp(){
@@ -73,20 +73,20 @@ restoreBackUp(){
     yarn build:production
     sudo php artisan optimize:clear
 }
-                                                                                                                           
-printf "${blue} ____       _____        ______          _________________  ____   ____      ______        ______  _______        ______    \n"
-printf "${blue}|    |  ___|\    \   ___|\     \        /                 \|    | |    | ___|\     \      |      \/       \   ___|\     \   \n"
-printf "${blue}|    | /    /\    \ |     \     \       \______     ______/|    | |    ||     \     \    /          /\     \ |     \     \  \n"
-printf "${blue}|    ||    |  |    ||     ,_____/|         \( /    /  )/   |    |_|    ||     ,_____/|  /     /\   / /\     ||     ,_____/| \n"
-printf "${blue}|    ||    |  |____||     \--'\_|/          ' |   |   '    |    .-.    ||     \--'\_|/ /     /\ \_/ / /    /||     \--'\_|/ \n"
-printf "${blue}|    ||    |   ____ |     /___/|              |   |        |    | |    ||     /___/|  |     |  \|_|/ /    / ||     /___/|   \n"
-printf "${blue}|    ||    |  |    ||     \____|\            /   //        |    | |    ||     \____|\ |     |       |    |  ||     \____|\  \n"
-printf "${blue}|____||\ ___\/    /||____ '     /|          /___//         |____| |____||____ '     /||\____\       |____|  /|____ '     /| \n"
-printf "${blue}|    || |   /____/ ||    /_____/ |         |    |          |    | |    ||    /_____/ || |    |      |    | / |    /_____/ | \n"
-printf "${blue}|____| \|___|    | /|____|     | /         |____|          |____| |____||____|     | / \|____|      |____|/  |____|     | / \n"
-printf "${blue}  \(     \( |____|/   \( |_____|/            \(              \(     )/    \( |_____|/     \(          )/       \( |_____|/  \n"
-printf "${blue}   '      '   )/       '    )/                '               '     '      '    )/         '          '         '    )/     \n"
-printf "${blue}              '             '                                                   '                                    '      \n"
+
+printf "${BLUE} ____       _____        ______          _________________  ____   ____      ______        ______  _______        ______    \n"
+printf "${BLUE}|    |  ___|\    \   ___|\     \        /                 \|    | |    | ___|\     \      |      \/       \   ___|\     \   \n"
+printf "${BLUE}|    | /    /\    \ |     \     \       \______     ______/|    | |    ||     \     \    /          /\     \ |     \     \  \n"
+printf "${BLUE}|    ||    |  |    ||     ,_____/|         \( /    /  )/   |    |_|    ||     ,_____/|  /     /\   / /\     ||     ,_____/| \n"
+printf "${BLUE}|    ||    |  |____||     \--'\_|/          ' |   |   '    |    .-.    ||     \--'\_|/ /     /\ \_/ / /    /||     \--'\_|/ \n"
+printf "${BLUE}|    ||    |   ____ |     /___/|              |   |        |    | |    ||     /___/|  |     |  \|_|/ /    / ||     /___/|   \n"
+printf "${BLUE}|    ||    |  |    ||     \____|\            /   //        |    | |    ||     \____|\ |     |       |    |  ||     \____|\  \n"
+printf "${BLUE}|____||\ ___\/    /||____ '     /|          /___//         |____| |____||____ '     /||\____\       |____|  /|____ '     /| \n"
+printf "${BLUE}|    || |   /____/ ||    /_____/ |         |    |          |    | |    ||    /_____/ || |    |      |    | / |    /_____/ | \n"
+printf "${BLUE}|____| \|___|    | /|____|     | /         |____|          |____| |____||____|     | / \|____|      |____|/  |____|     | / \n"
+printf "${BLUE}  \(     \( |____|/   \( |_____|/            \(              \(     )/    \( |_____|/     \(          )/       \( |_____|/  \n"
+printf "${BLUE}   '      '   )/       '    )/                '               '     '      '    )/         '          '         '    )/     \n"
+printf "${BLUE}              '             '                                                   '                                    '      \n"
 echo ""
 echo "Copyright (c) 2022 Angelillo15 | angelillo15.es"
 echo "This program is free software: you can redistribute it and/or modify"
